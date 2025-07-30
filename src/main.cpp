@@ -1,4 +1,4 @@
-//main.cpp
+// main.cpp
 #include "first_app.hpp"
 
 #include <cstdlib>
@@ -6,7 +6,7 @@
 #include <stdexcept>
 
 int main() {
-  app::FirstApp app{}; // конструктор вызывается по умолчанию
+  app::FirstApp app{};
 
   try {
     app.run();

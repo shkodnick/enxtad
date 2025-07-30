@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/app.dir/src/app_window.cpp.o.d"
   "CMakeFiles/app.dir/src/first_app.cpp.o"
   "CMakeFiles/app.dir/src/first_app.cpp.o.d"
+  "CMakeFiles/app.dir/src/instance.cpp.o"
+  "CMakeFiles/app.dir/src/instance.cpp.o.d"
   "CMakeFiles/app.dir/src/main.cpp.o"
   "CMakeFiles/app.dir/src/main.cpp.o.d"
   "app"

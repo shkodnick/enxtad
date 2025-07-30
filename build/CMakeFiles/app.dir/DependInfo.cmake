@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/feitan/cg/vulkan/src/app_window.cpp" "CMakeFiles/app.dir/src/app_window.cpp.o" "gcc" "CMakeFiles/app.dir/src/app_window.cpp.o.d"
   "/Users/feitan/cg/vulkan/src/first_app.cpp" "CMakeFiles/app.dir/src/first_app.cpp.o" "gcc" "CMakeFiles/app.dir/src/first_app.cpp.o.d"
+  "/Users/feitan/cg/vulkan/src/instance.cpp" "CMakeFiles/app.dir/src/instance.cpp.o" "gcc" "CMakeFiles/app.dir/src/instance.cpp.o.d"
   "/Users/feitan/cg/vulkan/src/main.cpp" "CMakeFiles/app.dir/src/main.cpp.o" "gcc" "CMakeFiles/app.dir/src/main.cpp.o.d"
   )
 

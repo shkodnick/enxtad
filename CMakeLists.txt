@@ -13,7 +13,8 @@ find_package(glm REQUIRED)
 add_executable(app
     src/main.cpp
     src/first_app.cpp
-    src/app_window.cpp)
+    src/app_window.cpp
+    src/instance.cpp)
 
 target_include_directories(app
     PRIVATE

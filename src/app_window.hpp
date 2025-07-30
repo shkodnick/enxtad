@@ -1,4 +1,4 @@
-//app_window.hpp
+// app_window.hpp
 #pragma once
 
 #define GLFW_INCLUDE_VULKAN
@@ -7,22 +7,23 @@
 #include <string>
 
 namespace app {
-  class AppWindow {
-    public:
-      AppWindow(uint32_t w, uint32_t h, std::string name);
-      ~AppWindow();
+class AppWindow {
+public:
+  AppWindow(uint32_t w, uint32_t h, std::string name);
+  ~AppWindow();
 
-      AppWindow(const AppWindow &) = delete;
-      AppWindow &operator=(const AppWindow &) = delete;
-      
-      bool shouldClose() {return glfwWindowShouldClose(window);}
-    private:
-      void initWindow();
+  AppWindow(const AppWindow &) = delete;
+  AppWindow &operator=(const AppWindow &) = delete;
 
-      const uint32_t width;
-      const uint32_t height;
+  bool shouldClose() { return glfwWindowShouldClose(window); }
 
-      std::string windowName;
-      GLFWwindow* window;
-  };
-}
+private:
+  void initWindow();
+
+  const uint32_t width;
+  const uint32_t height;
+
+  std::string windowName;
+  GLFWwindow *window;
+};
+} // namespace app

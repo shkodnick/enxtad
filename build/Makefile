@@ -184,6 +184,30 @@ src/first_app.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/first_app.cpp.s
 .PHONY : src/first_app.cpp.s
 
+src/instance.o: src/instance.cpp.o
+.PHONY : src/instance.o
+
+# target to build an object file
+src/instance.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/instance.cpp.o
+.PHONY : src/instance.cpp.o
+
+src/instance.i: src/instance.cpp.i
+.PHONY : src/instance.i
+
+# target to preprocess a source file
+src/instance.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/instance.cpp.i
+.PHONY : src/instance.cpp.i
+
+src/instance.s: src/instance.cpp.s
+.PHONY : src/instance.s
+
+# target to generate assembly for a file
+src/instance.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/instance.cpp.s
+.PHONY : src/instance.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -224,6 +248,9 @@ help:
 	@echo "... src/first_app.o"
 	@echo "... src/first_app.i"
 	@echo "... src/first_app.s"
+	@echo "... src/instance.o"
+	@echo "... src/instance.i"
+	@echo "... src/instance.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
