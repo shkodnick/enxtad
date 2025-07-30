@@ -1,0 +1,3 @@
+/Users/feitan/cg/vulkan/build/CMakeFiles/app.dir
+/Users/feitan/cg/vulkan/build/CMakeFiles/edit_cache.dir
+/Users/feitan/cg/vulkan/build/CMakeFiles/rebuild_cache.dir
