@@ -1,6 +1,5 @@
-CMakeFiles/app.dir/src/instance.cpp.o: \
-  /Users/feitan/cg/vulkan/src/instance.cpp \
-  /Users/feitan/cg/vulkan/src/instance.hpp \
+CMakeFiles/app.dir/src/debug.cpp.o: /Users/feitan/cg/vulkan/src/debug.cpp \
+  /Users/feitan/cg/vulkan/src/debug.hpp \
   /usr/local/include/vulkan/vulkan.h \
   /usr/local/include/vulkan/vk_platform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/stddef.h \
@@ -50,7 +49,6 @@ CMakeFiles/app.dir/src/instance.cpp.o: \
   /usr/local/include/vk_video/vulkan_video_codec_av1std_encode.h \
   /usr/local/include/vk_video/vulkan_video_codec_vp9std.h \
   /usr/local/include/vk_video/vulkan_video_codec_vp9std_decode.h \
-  /Users/feitan/cg/vulkan/src/debug.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/usr/include/c++/v1/__assertion_handler \

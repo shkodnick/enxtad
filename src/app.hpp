@@ -22,7 +22,7 @@ public:
 
 private:
   std::vector<const char *> getRequiredExtensions();
-
+  std::vector<const char *> getRequiredLayers();
   AppWindow appWindow{WIDTH, HEIGHT, "Vulkan smth"};
   std::unique_ptr<vk::Instance> vkInstance;
 };

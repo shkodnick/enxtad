@@ -86,19 +86,19 @@ CMakeFiles/app.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/main.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/feitan/cg/vulkan/src/main.cpp -o CMakeFiles/app.dir/src/main.cpp.s
 
-CMakeFiles/app.dir/src/first_app.cpp.o: CMakeFiles/app.dir/flags.make
-CMakeFiles/app.dir/src/first_app.cpp.o: /Users/feitan/cg/vulkan/src/first_app.cpp
-CMakeFiles/app.dir/src/first_app.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/feitan/cg/vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/first_app.cpp.o"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/first_app.cpp.o -MF CMakeFiles/app.dir/src/first_app.cpp.o.d -o CMakeFiles/app.dir/src/first_app.cpp.o -c /Users/feitan/cg/vulkan/src/first_app.cpp
+CMakeFiles/app.dir/src/app.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/app.cpp.o: /Users/feitan/cg/vulkan/src/app.cpp
+CMakeFiles/app.dir/src/app.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/feitan/cg/vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/app.dir/src/app.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/app.cpp.o -MF CMakeFiles/app.dir/src/app.cpp.o.d -o CMakeFiles/app.dir/src/app.cpp.o -c /Users/feitan/cg/vulkan/src/app.cpp
 
-CMakeFiles/app.dir/src/first_app.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/first_app.cpp.i"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/feitan/cg/vulkan/src/first_app.cpp > CMakeFiles/app.dir/src/first_app.cpp.i
+CMakeFiles/app.dir/src/app.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/app.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/feitan/cg/vulkan/src/app.cpp > CMakeFiles/app.dir/src/app.cpp.i
 
-CMakeFiles/app.dir/src/first_app.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/first_app.cpp.s"
-	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/feitan/cg/vulkan/src/first_app.cpp -o CMakeFiles/app.dir/src/first_app.cpp.s
+CMakeFiles/app.dir/src/app.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/app.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/feitan/cg/vulkan/src/app.cpp -o CMakeFiles/app.dir/src/app.cpp.s
 
 CMakeFiles/app.dir/src/app_window.cpp.o: CMakeFiles/app.dir/flags.make
 CMakeFiles/app.dir/src/app_window.cpp.o: /Users/feitan/cg/vulkan/src/app_window.cpp
@@ -128,25 +128,41 @@ CMakeFiles/app.dir/src/instance.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/instance.cpp.s"
 	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/feitan/cg/vulkan/src/instance.cpp -o CMakeFiles/app.dir/src/instance.cpp.s
 
+CMakeFiles/app.dir/src/debug.cpp.o: CMakeFiles/app.dir/flags.make
+CMakeFiles/app.dir/src/debug.cpp.o: /Users/feitan/cg/vulkan/src/debug.cpp
+CMakeFiles/app.dir/src/debug.cpp.o: CMakeFiles/app.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/feitan/cg/vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/app.dir/src/debug.cpp.o"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/app.dir/src/debug.cpp.o -MF CMakeFiles/app.dir/src/debug.cpp.o.d -o CMakeFiles/app.dir/src/debug.cpp.o -c /Users/feitan/cg/vulkan/src/debug.cpp
+
+CMakeFiles/app.dir/src/debug.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/app.dir/src/debug.cpp.i"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/feitan/cg/vulkan/src/debug.cpp > CMakeFiles/app.dir/src/debug.cpp.i
+
+CMakeFiles/app.dir/src/debug.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/app.dir/src/debug.cpp.s"
+	/usr/bin/clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/feitan/cg/vulkan/src/debug.cpp -o CMakeFiles/app.dir/src/debug.cpp.s
+
 # Object files for target app
 app_OBJECTS = \
 "CMakeFiles/app.dir/src/main.cpp.o" \
-"CMakeFiles/app.dir/src/first_app.cpp.o" \
+"CMakeFiles/app.dir/src/app.cpp.o" \
 "CMakeFiles/app.dir/src/app_window.cpp.o" \
-"CMakeFiles/app.dir/src/instance.cpp.o"
+"CMakeFiles/app.dir/src/instance.cpp.o" \
+"CMakeFiles/app.dir/src/debug.cpp.o"
 
 # External object files for target app
 app_EXTERNAL_OBJECTS =
 
 app: CMakeFiles/app.dir/src/main.cpp.o
-app: CMakeFiles/app.dir/src/first_app.cpp.o
+app: CMakeFiles/app.dir/src/app.cpp.o
 app: CMakeFiles/app.dir/src/app_window.cpp.o
 app: CMakeFiles/app.dir/src/instance.cpp.o
+app: CMakeFiles/app.dir/src/debug.cpp.o
 app: CMakeFiles/app.dir/build.make
 app: /opt/homebrew/lib/libglfw.3.4.dylib
 app: /usr/local/lib/libvulkan.dylib
 app: CMakeFiles/app.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/feitan/cg/vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable app"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/feitan/cg/vulkan/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable app"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/app.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

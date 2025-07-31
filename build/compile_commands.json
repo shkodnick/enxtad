@@ -7,9 +7,9 @@
 },
 {
   "directory": "/Users/feitan/cg/vulkan/build",
-  "command": "/usr/bin/clang++  -I/Users/feitan/cg/vulkan/dependencies -isystem /opt/homebrew/include -g -std=gnu++14 -arch arm64 -o CMakeFiles/app.dir/src/first_app.cpp.o -c /Users/feitan/cg/vulkan/src/first_app.cpp",
-  "file": "/Users/feitan/cg/vulkan/src/first_app.cpp",
-  "output": "CMakeFiles/app.dir/src/first_app.cpp.o"
+  "command": "/usr/bin/clang++  -I/Users/feitan/cg/vulkan/dependencies -isystem /opt/homebrew/include -g -std=gnu++14 -arch arm64 -o CMakeFiles/app.dir/src/app.cpp.o -c /Users/feitan/cg/vulkan/src/app.cpp",
+  "file": "/Users/feitan/cg/vulkan/src/app.cpp",
+  "output": "CMakeFiles/app.dir/src/app.cpp.o"
 },
 {
   "directory": "/Users/feitan/cg/vulkan/build",
@@ -22,5 +22,11 @@
   "command": "/usr/bin/clang++  -I/Users/feitan/cg/vulkan/dependencies -isystem /opt/homebrew/include -g -std=gnu++14 -arch arm64 -o CMakeFiles/app.dir/src/instance.cpp.o -c /Users/feitan/cg/vulkan/src/instance.cpp",
   "file": "/Users/feitan/cg/vulkan/src/instance.cpp",
   "output": "CMakeFiles/app.dir/src/instance.cpp.o"
+},
+{
+  "directory": "/Users/feitan/cg/vulkan/build",
+  "command": "/usr/bin/clang++  -I/Users/feitan/cg/vulkan/dependencies -isystem /opt/homebrew/include -g -std=gnu++14 -arch arm64 -o CMakeFiles/app.dir/src/debug.cpp.o -c /Users/feitan/cg/vulkan/src/debug.cpp",
+  "file": "/Users/feitan/cg/vulkan/src/debug.cpp",
+  "output": "CMakeFiles/app.dir/src/debug.cpp.o"
 }
 ]

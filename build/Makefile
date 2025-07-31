@@ -136,6 +136,30 @@ app/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
 .PHONY : app/fast
 
+src/app.o: src/app.cpp.o
+.PHONY : src/app.o
+
+# target to build an object file
+src/app.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/app.cpp.o
+.PHONY : src/app.cpp.o
+
+src/app.i: src/app.cpp.i
+.PHONY : src/app.i
+
+# target to preprocess a source file
+src/app.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/app.cpp.i
+.PHONY : src/app.cpp.i
+
+src/app.s: src/app.cpp.s
+.PHONY : src/app.s
+
+# target to generate assembly for a file
+src/app.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/app.cpp.s
+.PHONY : src/app.cpp.s
+
 src/app_window.o: src/app_window.cpp.o
 .PHONY : src/app_window.o
 
@@ -160,29 +184,29 @@ src/app_window.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/app_window.cpp.s
 .PHONY : src/app_window.cpp.s
 
-src/first_app.o: src/first_app.cpp.o
-.PHONY : src/first_app.o
+src/debug.o: src/debug.cpp.o
+.PHONY : src/debug.o
 
 # target to build an object file
-src/first_app.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/first_app.cpp.o
-.PHONY : src/first_app.cpp.o
+src/debug.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/debug.cpp.o
+.PHONY : src/debug.cpp.o
 
-src/first_app.i: src/first_app.cpp.i
-.PHONY : src/first_app.i
+src/debug.i: src/debug.cpp.i
+.PHONY : src/debug.i
 
 # target to preprocess a source file
-src/first_app.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/first_app.cpp.i
-.PHONY : src/first_app.cpp.i
+src/debug.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/debug.cpp.i
+.PHONY : src/debug.cpp.i
 
-src/first_app.s: src/first_app.cpp.s
-.PHONY : src/first_app.s
+src/debug.s: src/debug.cpp.s
+.PHONY : src/debug.s
 
 # target to generate assembly for a file
-src/first_app.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/first_app.cpp.s
-.PHONY : src/first_app.cpp.s
+src/debug.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/src/debug.cpp.s
+.PHONY : src/debug.cpp.s
 
 src/instance.o: src/instance.cpp.o
 .PHONY : src/instance.o
@@ -242,12 +266,15 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... app"
+	@echo "... src/app.o"
+	@echo "... src/app.i"
+	@echo "... src/app.s"
 	@echo "... src/app_window.o"
 	@echo "... src/app_window.i"
 	@echo "... src/app_window.s"
-	@echo "... src/first_app.o"
-	@echo "... src/first_app.i"
-	@echo "... src/first_app.s"
+	@echo "... src/debug.o"
+	@echo "... src/debug.i"
+	@echo "... src/debug.s"
 	@echo "... src/instance.o"
 	@echo "... src/instance.i"
 	@echo "... src/instance.s"
