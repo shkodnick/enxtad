@@ -1,12 +1,12 @@
 #pragma once
 
+#include "debug.hpp"
 #include "vulkan/vulkan.h"
 #include "vulkan/vulkan_core.h"
-#include "debug.hpp"
 #include <string>
 #include <vector>
 
-namespace vk {
+namespace instance {
 class Instance {
 public:
   Instance(const std::vector<const char *> &extensions,
@@ -21,6 +21,8 @@ public:
 
 private:
   void createInstance();
+  VkApplicationInfo addVkApplicationInfo();
+  VkInstanceCreateInfo addVkInstanceCreateInfo(VkApplicationInfo appInfo);
   void setupDebugMessenger();
   bool checkValidationLayerSupport();
 
@@ -32,4 +34,4 @@ private:
 
   std::unique_ptr<debug::DebugUtilsMessenger> debugMessenger;
 };
-} // namespace vk
+} // namespace instance

@@ -4,7 +4,7 @@
 #include <iostream>
 #include <stdexcept>
 
-namespace vk {
+namespace instance {
 Instance::Instance(const std::vector<const char *> &exts,
                    const std::vector<const char *> &layers,
                    bool enableValidation)
@@ -27,6 +27,20 @@ void Instance::createInstance() {
     throw std::runtime_error("validation layers requested, but not available!");
   }
 
+  VkApplicationInfo appInfo = addVkApplicationInfo();
+  VkInstanceCreateInfo createInfo = addVkInstanceCreateInfo(appInfo);
+
+  VkResult result = vkCreateInstance(&createInfo, nullptr, &instance);
+  if (result != VK_SUCCESS) {
+    std::cerr << "Failed to create Vulkan instance. Error code: " << result
+              << std::endl;
+    throw std::runtime_error("failed to create Vulkan instance");
+  }
+
+  std::cout << "Vulkan instance created successfully!" << std::endl;
+}
+
+VkApplicationInfo Instance::addVkApplicationInfo() {
   VkApplicationInfo appInfo{};
   appInfo.sType = VK_STRUCTURE_TYPE_APPLICATION_INFO;
   appInfo.pApplicationName = "Hello smth";
@@ -35,6 +49,11 @@ void Instance::createInstance() {
   appInfo.engineVersion = VK_MAKE_VERSION(1, 0, 0);
   appInfo.apiVersion = VK_API_VERSION_1_0;
 
+  return appInfo;
+}
+
+VkInstanceCreateInfo
+Instance::addVkInstanceCreateInfo(VkApplicationInfo appInfo) {
   VkInstanceCreateInfo createInfo{};
   createInfo.sType = VK_STRUCTURE_TYPE_INSTANCE_CREATE_INFO;
   createInfo.pApplicationInfo = &appInfo;
@@ -55,14 +74,7 @@ void Instance::createInstance() {
   // Флаг для portability на macOS
   createInfo.flags |= VK_INSTANCE_CREATE_ENUMERATE_PORTABILITY_BIT_KHR;
 
-  VkResult result = vkCreateInstance(&createInfo, nullptr, &instance);
-  if (result != VK_SUCCESS) {
-    std::cerr << "Failed to create Vulkan instance. Error code: " << result
-              << std::endl;
-    throw std::runtime_error("failed to create Vulkan instance");
-  }
-
-  std::cout << "Vulkan instance created successfully!" << std::endl;
+  return createInfo;
 }
 
 bool Instance::checkValidationLayerSupport() {
@@ -95,4 +107,4 @@ void Instance::setupDebugMessenger() {
       instance, enableValidationLayers);
 }
 
-} // namespace vk
+} // namespace instance
